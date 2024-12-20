@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Checker</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .success-message {
+            color: green;
+            margin-top: 10px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+    
+    <div id="successMessage" class="success-message hidden">
+        You entered successfully
+    </div>
+    
+    <div id="errorMessage" class="error-message hidden">
+        Password is not correct
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
